@@ -6,7 +6,8 @@ import { AppComponent } from './app.component';
 import {FormsModule} from "@angular/forms";
 import {environment} from "../environments/environments";
 import { TableComponent } from './table/table.component';
-import {provideFirebaseApp,initializeApp} from "@angular/fire/app";
+import {initializeApp} from "firebase/app";
+import {provideFirebaseApp} from "@angular/fire/app";
 import {getFirestore, provideFirestore} from "@angular/fire/firestore";
 
 @NgModule({
