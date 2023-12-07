@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'monetique';
+  user : any = {
+    n_carte : "",
+    n_cin : "",
+    password : "",
+  }
+  payer() {
+    console.log(this.user);
+    alert("Paiement effectué avec succès");
+  }
 }
