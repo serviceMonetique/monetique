@@ -4,12 +4,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {FormsModule} from "@angular/forms";
-// @ts-ignore
-import {provideFirebaseApp,initializeApp} from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
-// @ts-ignore
-import {getFirestore, provideFirestore} from "https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore.js";
 import {environment} from "../environments/environments";
 import { TableComponent } from './table/table.component';
+import {provideFirebaseApp,initializeApp} from "@angular/fire/app";
+import {getFirestore, provideFirestore} from "@angular/fire/firestore";
 
 @NgModule({
   declarations: [
